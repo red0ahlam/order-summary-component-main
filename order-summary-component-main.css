@@ -1,0 +1,138 @@
+@font-face {
+    font-family: "red hat display";
+    src: url("../fonts/RedHatDisplay-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+    font-family: "red hat display";
+    font-size: 16px;
+    background-image: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    max-width: 26rem;
+    border-radius: .75rem;
+    overflow: hidden;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5em;
+    box-sizing: border-box;
+    width: 80%
+}
+
+#main-paragraph {
+    font-weight: 600;
+    max-width: 18rem;
+    text-align: center;
+    margin-top: 0em;
+    margin-bottom: 1.5em;
+    color: rgba(131, 125, 125, 0.884);
+}
+
+.annual-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 1.5em;
+    box-sizing: border-box;
+    margin-bottom: 2em;
+    width: 100%;
+    border-radius: .75rem;
+}
+
+.annual-plan div:nth-child(1) {
+    display: flex;
+}
+
+.annual-plan a {
+    margin-left: 1em;
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.plan-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1em;
+}
+
+.plan-text >* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.plan-text p:nth-child(2) {
+    color: rgba(104, 104, 104, 0.89);
+    font-weight: 500;
+    font-size: 1em;
+}
+.plan-text p:nth-child(1) {
+    color: black;
+    font-weight: 900;
+    font-size: 1em;
+}
+
+.icon {
+    max-width: 2.75rem;
+    max-height: 2.75rem;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    margin-bottom: 2em;
+    padding: 1.25em;
+    border-radius: .75rem;
+    font-weight: 900;
+}
+
+.btn-payment {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0px 12px 10px 4px hsl(225, 100%, 92%);
+    font-size: .85em;
+}
+
+.btn-payment:hover {
+    opacity: 0.7;
+}
+
+.btn-order-cancel {
+    background-color: inherit;
+    color: rgba(131, 125, 125, 0.884);
+    font-size: .85em;
+}
+
+.btn-order-cancel:hover {
+    color: black;
+}
+
+
+
+@media (max-width: 375px) {
+    body {
+        font-size: 12px;
+    }
+}
